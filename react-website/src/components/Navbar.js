@@ -6,9 +6,7 @@ import './Navbar.css';
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
-    //console.log(click) //false
-    //console.log(setClick) //dispatchAction()
-    const handleClick = () => setClick(!click);
+
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
@@ -33,7 +31,7 @@ function Navbar() {
                         TRVL
                         <i className='fab fa-typo3' />
                     </Link>
-                    <div className='menu-icon' onClick={handleClick}>
+                    <div className='menu-icon' onClick={() => setClick(!click)}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
