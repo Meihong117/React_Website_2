@@ -27,13 +27,16 @@ function Navbar() {
         <>
             <nav className='navbar'>
                 <div className='navbar-container'>
+                    {/* logo + icon */}
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                         TRVL
                         <i className='fab fa-typo3' />
                     </Link>
+                    {/* 三 toggle X */}
                     <div className='menu-icon' onClick={() => setClick(!click)}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
+                    {/* Home Services Products Sign-up */}
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
@@ -69,6 +72,7 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
+                    {/* If button is true, you'll see the button, if not, you won't. */}
                     {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
                 </div>
             </nav>
