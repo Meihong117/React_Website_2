@@ -1,9 +1,10 @@
 import React from 'react'
 import '../../App.css'
+import Form from '../signup/Form'
 
 function SignUp() {
     return (
-        <h1 className='sign-up'>sign-up</h1>
+        <Form />
     )
 }
 
