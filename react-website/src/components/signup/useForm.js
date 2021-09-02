@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import React from 'react'
-import validateInfo from "./validateInfo";
+
 
 const useForm = (callback, validateInfo) => {
     const [values, setValues] = useState({
@@ -11,7 +10,6 @@ const useForm = (callback, validateInfo) => {
     const [isSubmitting, setIsSubmitting] = useState(false)
 
     const handleChange = e => {
-        console.log(e.target)
         setValues({ ...values, [e.target.name]: e.target.value })
     }
 
@@ -21,7 +19,7 @@ const useForm = (callback, validateInfo) => {
         setIsSubmitting(true)
 
     }
-
+    //没有这个，按sign-up直接会跳转到成功页面
     useEffect(() => {
         if (Object.keys(errors).length === 0 && isSubmitting) {
             callback()
