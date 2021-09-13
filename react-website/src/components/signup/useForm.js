@@ -6,13 +6,14 @@ const useForm = (callback, validateInfo) => {
     const [values, setValues] = useState({
         username: '', email: '', password: '', password2: ''
     })
-    const [errors, setErrors] = useState({ })
-    const [isSubmitting, setIsSubmitting] = useState(false)
-
     const handleChange = e => {
         setValues({ ...values, [e.target.name]: e.target.value })
+        // console.log(e.target.name)
     }
 
+    const [errors, setErrors] = useState({ })
+    
+    const [isSubmitting, setIsSubmitting] = useState(false)
     const handleSubmit = e => {
         e.preventDefault();
         setErrors(validateInfo(values));

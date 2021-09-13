@@ -1,5 +1,5 @@
 export default function validateInfo(values) {
-    //console.log(values)//Object { username: "sdfsdfs", email: "sdfsd", password: "fff", password2: "" }
+    console.log(values)//Object { username: "sdfsdfs", email: "sdfsd", password: "fff", password2: "" }
     let errors = { }
     //username
     //.trim() removes whitespace from both ends of a string
