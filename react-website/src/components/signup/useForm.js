@@ -8,7 +8,7 @@ const useForm = (callback, validateInfo) => {
     })
     const handleChange = e => {
         setValues({ ...values, [e.target.name]: e.target.value })
-        // console.log(e.target.name)
+        //  console.log(values)
     }
 
     const [errors, setErrors] = useState({ })

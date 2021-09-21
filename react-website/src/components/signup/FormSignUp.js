@@ -8,7 +8,7 @@ const FormSignup = ({ submitForm }) => {
         submitForm,
         validate
     );
-
+        console.log(errors)
     return (
         <div className='form-content-right'>
             <form onSubmit={handleSubmit} className='form' noValidate>

@@ -29,7 +29,7 @@ function Navbar() {
                 <div className='navbar-container'>
                     {/* logo + icon */}
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        TRVL
+                        LOGO
                         <i className='fab fa-typo3' />
                     </Link>
                     {/* 三 toggle X */}
