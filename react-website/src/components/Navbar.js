@@ -24,7 +24,7 @@ function Navbar() {
         if(window.innerWidth<960){
             setDropdown(false)
         }else{
-            setDropdown(true)
+            setDropdown(false)
         }
     }
 
