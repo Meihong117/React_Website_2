@@ -70,7 +70,8 @@ function Navbar() {
                                 onClick={closeMobileMenu}
                             >
                                 Services <i className='fas fa-caret-down'/>
-                            </Link>{dropdown && <Dropdown />}
+                            </Link>
+                            {dropdown && <Dropdown />}
                         </li>
                         <li className='nav-item'>
                             <Link

@@ -1,5 +1,6 @@
 .dropdown-menu {
   width: 100%;
+  height: max-content;
   position: absolute;
   top: 80px;
   left: 0;
@@ -7,6 +8,7 @@
   text-align: start;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgb(232, 233, 233);
 }
 .dropdown-menu li {
@@ -15,6 +17,7 @@
 .left {
   margin-left: 100px;
 }
+
 .right {
   margin-right: 70px;
   display: flex;
@@ -25,7 +28,6 @@
 .line {
   border: 1px solid #c4c4c4;
   height: 180px;
-  margin-top: 10px;
 }
 /*
 .dropdown-menu.clicked {
@@ -38,7 +40,7 @@
   height: 100%;
   text-decoration: none;
   color: #010101;
-  margin: 10px;
+  margin: 5px;
 }
 .drop-img {
   height: 180px;
