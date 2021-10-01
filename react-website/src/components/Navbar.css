@@ -153,3 +153,6 @@
     transition: 250ms;
   }
 }
+.fa-caret-down {
+  margin: 2px;
+}
